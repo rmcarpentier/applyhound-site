@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApplyHound — Fetch Better Jobs</title>
+  <meta name="description" content="The job search platform built for professionals who are serious about their next move. Unified job feed, automatic application tracking, and email scanning — all in one place." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Nav — dark mode for homepage -->
+<nav class="nav dark-mode" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="stamp-dark.png" alt="ApplyHound" /></a>
+    <div class="nav-links">
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://applyhound-production.up.railway.app" class="btn btn-ghost-dark">Sign in</a>
+      <a href="https://applyhound-production.up.railway.app" class="btn btn-primary">Get started free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <!-- Subtle background icon watermark -->
+  <div style="position:absolute;top:50%;right:-60px;transform:translateY(-55%);width:480px;height:480px;opacity:0.05;pointer-events:none;z-index:0;">
+    <img src="icon-dark.png" alt="" style="width:100%;height:100%;object-fit:contain;" />
+  </div>
+
+  <div class="hero-inner">
+    <!-- Icon above badge — double size, transparent bg -->
+    <img src="icon-dark.png" alt="" style="height:104px;width:auto;margin-bottom:20px;opacity:0.95;" />
+    <div class="hero-badge">🐾 &nbsp;Fetch better jobs — now live</div>
+    <h1>Stop juggling tabs.<br><span class="accent">Start landing jobs.</span></h1>
+    <p class="hero-sub">ApplyHound fetches from every major job board, tracks your applications automatically via email, and shows you exactly where you stand — without the spreadsheet.</p>
+    <div class="hero-actions">
+      <a href="https://applyhound-production.up.railway.app" class="btn btn-primary btn-xl">Get started free →</a>
+      <a href="features.html" class="btn btn-ghost-dark btn-lg">See how it works</a>
+    </div>
+    <p class="hero-note">No credit card required &nbsp;·&nbsp; 2-minute setup</p>
+  </div>
+
+  <!-- App window -->
+  <div style="padding: 0 32px; max-width: 1120px; margin: 0 auto;">
+    <div class="app-window">
+      <div class="app-window-bar">
+        <div class="win-dot" style="background:#ff5f57"></div>
+        <div class="win-dot" style="background:#febc2e"></div>
+        <div class="win-dot" style="background:#28c840"></div>
+        <div class="win-url">applyhound.com</div>
+      </div>
+      <div class="app-window-body">
+        <!-- Sidebar -->
+        <div class="aw-sidebar">
+          <div class="aw-logo">
+            <img src="logo-light.png" alt="ApplyHound" style="width:100%;height:auto;display:block;" />
+          </div>
+          <div class="aw-nav-item active">Feed <span class="aw-badge">29</span></div>
+          <div class="aw-nav-item">Saved <span style="color:#9ca3af;font-size:11px;font-weight:500;">1</span></div>
+          <div class="aw-nav-item">Progress</div>
+          <div class="aw-nav-item">Preferences</div>
+          <div class="aw-nav-item" style="margin-top:4px;opacity:0.5;font-size:10px;">My Resume <span style="background:#d97706;color:#fff;border-radius:3px;padding:1px 4px;font-size:9px;">PRO</span></div>
+          <div class="aw-user">
+            <div class="aw-avatar">R</div>
+            <div><div class="aw-user-name">Ryan C.</div><div class="aw-user-plan">Standard</div></div>
+          </div>
+        </div>
+        <!-- Job list -->
+        <div class="aw-list">
+          <div class="aw-pull-btn">↓ Pull new jobs</div>
+          <div class="aw-list-header">29 jobs · 8 unread</div>
+          <div class="aw-card active">
+            <div class="aw-co-logo" style="background:#eff4ff;color:#2563eb;">K</div>
+            <div style="min-width:0;flex:1;">
+              <div class="aw-job-title bold"><span class="aw-unread-dot"></span>Construction Project Manager</div>
+              <div class="aw-job-sub">Kimmei & Associates · Nashville</div>
+              <div class="aw-job-meta"><span class="aw-tag" style="background:#f0fdf4;color:#16a34a;">$95k–$130k</span><span class="aw-tag" style="background:#f3f4f6;color:#6b7280;">Onsite</span></div>
+            </div>
+          </div>
+          <div class="aw-card">
+            <div class="aw-co-logo" style="background:#fff7ed;color:#d97706;">J</div>
+            <div style="min-width:0;flex:1;">
+              <div class="aw-job-title bold"><span class="aw-unread-dot"></span>Senior Project Manager</div>
+              <div class="aw-job-sub">Jacobs · Nashville, TN</div>
+              <div class="aw-job-meta"><span class="aw-tag" style="background:#f0fdfa;color:#0d9488;">Remote</span></div>
+            </div>
+          </div>
+          <div class="aw-card">
+            <div class="aw-co-logo" style="background:#faf5ff;color:#7c3aed;">C</div>
+            <div style="min-width:0;flex:1;">
+              <div class="aw-job-title">Director, Project Services</div>
+              <div class="aw-job-sub">Cushman & Wakefield</div>
+              <div class="aw-job-meta"><span class="aw-tag" style="background:#f0fdfa;color:#0d9488;">Hybrid</span></div>
+            </div>
+          </div>
+          <div class="aw-card">
+            <div class="aw-co-logo" style="background:#fef2f2;color:#dc2626;">B</div>
+            <div style="min-width:0;flex:1;">
+              <div class="aw-job-title">Structural Project Engineer</div>
+              <div class="aw-job-sub">Benesch · Nashville</div>
+            </div>
+          </div>
+          <div class="aw-card">
+            <div class="aw-co-logo" style="background:#f0fdf4;color:#16a34a;">H</div>
+            <div style="min-width:0;flex:1;">
+              <div class="aw-job-title">Program Manager</div>
+              <div class="aw-job-sub">HNTB · Nashville, TN</div>
+            </div>
+          </div>
+        </div>
+        <!-- Detail panel -->
+        <div class="aw-detail">
+          <div class="aw-detail-header">
+            <div class="aw-detail-logo" style="background:#eff4ff;color:#2563eb;">K</div>
+            <div>
+              <div class="aw-detail-title">Construction Project Manager</div>
+              <div class="aw-detail-company">Kimmei & Associates</div>
+            </div>
+            <div class="aw-detail-source">
+              <div style="display:flex;align-items:center;gap:5px;"><span>via LinkedIn</span><div class="aw-source-badge" style="background:#0077b5;">in</div></div>
+              <span>Posted Sep 8, 2026</span>
+            </div>
+          </div>
+          <div class="aw-meta-row">
+            <span class="aw-meta-item">📍 Nashville, TN</span>
+            <span class="aw-salary">$95,000 – $130,000</span>
+            <span style="font-size:11px;background:#f0fdf4;color:#16a34a;padding:2px 7px;border-radius:4px;font-weight:700;">Above market</span>
+          </div>
+          <div style="margin-bottom:12px;">
+            <div class="aw-market-label">Market rate for this role in Nashville</div>
+            <div class="aw-market-bar"><div class="aw-market-fill"></div><div class="aw-market-dot" style="left:62%;"></div></div>
+            <div class="aw-market-range"><span>$72k</span><span style="color:#2563eb;font-weight:600;">Median $108k</span><span>$152k</span></div>
+          </div>
+          <div class="aw-match-row">
+            <span class="aw-match-badge">✓ Onsite</span>
+            <span class="aw-match-badge">✓ Full-time</span>
+            <span class="aw-match-badge">✓ Salary range</span>
+          </div>
+          <div><span class="aw-apply-btn">Apply now →</span><span class="aw-save-btn">Save for later</span></div>
+          <div style="margin-top:14px;padding-top:14px;border-top:1px solid #f3f4f6;">
+            <div style="font-size:10px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;">Company scorecard</div>
+            <div style="display:flex;gap:10px;align-items:center;">
+              <div style="font-size:20px;font-weight:900;color:#111;">4.1<span style="font-size:12px;font-weight:400;color:#9ca3af;">/5</span></div>
+              <div style="flex:1;"><div style="height:5px;background:#f3f4f6;border-radius:3px;overflow:hidden;margin-bottom:3px;"><div style="width:82%;height:100%;background:#16a34a;border-radius:3px;"></div></div><div style="font-size:10px;color:#9ca3af;">2,841 Glassdoor reviews</div></div>
+              <div style="background:#f0fdf4;color:#16a34a;font-size:14px;font-weight:800;padding:4px 10px;border-radius:6px;">B+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Job board logo scroll — edge to edge, real logos greyscale -->
+<div class="logo-scroll-section">
+  <div class="logo-scroll-label">Fetches jobs from everywhere you're already looking</div>
+  <div class="logo-track-wrapper">
+    <div class="logo-track">
+      <!-- Set 1 -->
+      <div class="logo-item"><img src="LinkedIn.png" alt="LinkedIn" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Indeed.png" alt="Indeed" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="ZipRecruiter.png" alt="ZipRecruiter" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Glassdoor.png" alt="Glassdoor" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Monster.png" alt="Monster" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Dice.png" alt="Dice" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="CareerBuilder.png" alt="CareerBuilder" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="SimplyHired.png" alt="SimplyHired" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Google.png" alt="Google Jobs" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Jooble.png" alt="Jooble" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="FlexJobs.png" alt="FlexJobs" style="width:200px;height:auto;" /></div>
+      <!-- Set 2 — duplicate for seamless loop -->
+      <div class="logo-item"><img src="LinkedIn.png" alt="LinkedIn" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Indeed.png" alt="Indeed" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="ZipRecruiter.png" alt="ZipRecruiter" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Glassdoor.png" alt="Glassdoor" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Monster.png" alt="Monster" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Dice.png" alt="Dice" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="CareerBuilder.png" alt="CareerBuilder" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="SimplyHired.png" alt="SimplyHired" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Google.png" alt="Google Jobs" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="Jooble.png" alt="Jooble" style="width:200px;height:auto;" /></div>
+      <div class="logo-item"><img src="FlexJobs.png" alt="FlexJobs" style="width:200px;height:auto;" /></div>
+    </div>
+  </div>
+</div>
+
+<!-- Problem -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">The problem</div>
+      <h2>Job searching is broken.<br>We fixed it.</h2>
+      <p class="lead" style="margin-top:16px;">The average job seeker visits 5–6 websites,<br>manually tracks applications in spreadsheets, and never gets closure.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-cell"><div class="problem-icon">🗂️</div><div class="problem-title">Tab overload</div><div class="problem-desc">LinkedIn. Indeed. ZipRecruiter. Glassdoor. You're burning hours switching between boards instead of applying.</div></div>
+      <div class="problem-cell"><div class="problem-icon">📊</div><div class="problem-title">Spreadsheet hell</div><div class="problem-desc">Manual tracking breaks down immediately. Applications get lost, follow-ups missed, status unknown.</div></div>
+      <div class="problem-cell"><div class="problem-icon">👻</div><div class="problem-title">Company ghosting</div><div class="problem-desc">You apply, hear nothing, and waste weeks wondering. No status updates, no rejection notice, no closure.</div></div>
+      <div class="problem-cell"><div class="problem-icon">💸</div><div class="problem-title">Salary guessing games</div><div class="problem-desc">Most postings hide the salary. You waste time interviewing only to find out the range was never in your ballpark.</div></div>
+      <div class="problem-cell"><div class="problem-icon">💀</div><div class="problem-title">Ghost jobs</div><div class="problem-desc">Filled roles stay posted for months. You apply to positions that were never open, wasting your time and energy.</div></div>
+      <div class="problem-cell"><div class="problem-icon">🔍</div><div class="problem-title">No company intel</div><div class="problem-desc">You can't tell which companies actually respond to candidates and which ones ghost everyone who applies.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">How it works</div>
+      <h2>Set up once.<br>Let it work for you.</h2>
+      <p class="lead" style="margin-top:16px;">ApplyHound does the heavy lifting so you can focus on preparing for interviews and landing the right offer.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">1</div><div class="step-title">Set your preferences</div><div class="step-desc">Job titles, locations, salary range, and work type. Two minutes, done once.</div></div>
+      <div class="step-card"><div class="step-num">2</div><div class="step-title">Auto-fetch your feed</div><div class="step-desc">Jobs from every major board land in one unified feed automatically — no manual searching required.</div></div>
+      <div class="step-card"><div class="step-num">3</div><div class="step-title">Connect Gmail</div><div class="step-desc">We scan for confirmations, rejections, and interview requests automatically. Read-only.</div></div>
+      <div class="step-card"><div class="step-num">4</div><div class="step-title">Your pipeline runs itself</div><div class="step-desc">Stages update as emails arrive. Your entire job search — organized, tracked, visible.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature split 1 — Feed -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="feature-split">
+      <div class="feature-split-content">
+        <div class="feature-split-eyebrow">Unified feed</div>
+        <h2>Every job board.<br>One place.</h2>
+        <p class="feature-split-desc">Stop switching between tabs. ApplyHound fetches from LinkedIn, Indeed, ZipRecruiter, Glassdoor, and dozens more — and surfaces only the jobs that match your criteria.</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span>New listings auto-fetched every few hours</li>
+          <li><span class="check">✓</span>Deduplication — same job from 3 boards shows once</li>
+          <li><span class="check">✓</span>Dismissed and reviewed jobs never reappear</li>
+          <li><span class="check">✓</span>Unread jobs highlighted — nothing gets missed</li>
+          <li><span class="check">✓</span>Company logos, job board icons, posted dates on every card</li>
+        </ul>
+      </div>
+      <div class="feature-split-visual" style="padding:20px;">
+        <div style="font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;">Feed · 29 jobs · 8 unread</div>
+        <div style="display:flex;flex-direction:column;gap:1px;">
+          <div style="background:#eff4ff;border-left:3px solid #2563eb;padding:12px;border-radius:8px 8px 0 0;display:flex;gap:10px;"><div style="width:28px;height:28px;border-radius:50%;background:#dbeafe;color:#2563eb;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">K</div><div><div style="font-size:12px;font-weight:800;color:#1d4ed8;">● Construction Project Manager</div><div style="font-size:11px;color:#6b7280;">Kimmei & Associates · Nashville · today</div><div style="margin-top:4px;"><span style="background:#f0fdf4;color:#16a34a;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;">$95k–$130k</span></div></div></div>
+          <div style="background:#fff;border:1px solid #f3f4f6;padding:12px;display:flex;gap:10px;"><div style="width:28px;height:28px;border-radius:50%;background:#fff7ed;color:#d97706;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">J</div><div><div style="font-size:12px;font-weight:800;color:#111;">● Senior Project Manager</div><div style="font-size:11px;color:#6b7280;">Jacobs · Nashville · today</div><div style="margin-top:4px;"><span style="background:#f0fdfa;color:#0d9488;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;">Remote</span></div></div></div>
+          <div style="background:#fff;border:1px solid #f3f4f6;padding:12px;display:flex;gap:10px;border-radius:0 0 8px 8px;"><div style="width:28px;height:28px;border-radius:50%;background:#faf5ff;color:#7c3aed;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">C</div><div><div style="font-size:12px;font-weight:600;color:#111;">Director, Project Services</div><div style="font-size:11px;color:#6b7280;">Cushman & Wakefield · 1d ago</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature split 2 — Email -->
+    <div class="feature-split reverse">
+      <div class="feature-split-content">
+        <div class="feature-split-eyebrow">Email scanning</div>
+        <h2>Your inbox does<br>the tracking.</h2>
+        <p class="feature-split-desc">Connect Gmail and ApplyHound scans for job-related emails automatically. When a confirmation, rejection, or interview request arrives, your pipeline updates — no manual entry needed.</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span>Detects 15+ signal types across all email formats</li>
+          <li><span class="check">✓</span>Read-only — we never send, modify, or delete emails</li>
+          <li><span class="check">✓</span>Every auto-update logged in your application timeline</li>
+          <li><span class="check">✓</span>Surfaces new applications found in your inbox</li>
+          <li><span class="check">✓</span>Manual override always available</li>
+        </ul>
+      </div>
+      <div class="feature-split-visual" style="padding:20px;">
+        <div style="font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;">📬 Detected this week</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="background:#fff;border:1px solid #e4e7ed;border-radius:8px;padding:12px;display:flex;gap:10px;align-items:center;"><span style="background:#eff4ff;color:#2563eb;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;">Applied</span><div><div style="font-size:12px;font-weight:600;">WD Partners</div><div style="font-size:11px;color:#9ca3af;">Construction Project Manager</div></div><div style="margin-left:auto;font-size:10px;color:#9ca3af;">today</div></div>
+          <div style="background:#fff;border:1px solid #e4e7ed;border-radius:8px;padding:12px;display:flex;gap:10px;align-items:center;"><span style="background:#fffbeb;color:#d97706;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;">Interview</span><div><div style="font-size:12px;font-weight:600;">Matter Real Estate</div><div style="font-size:11px;color:#9ca3af;">Senior Project Manager</div></div><div style="margin-left:auto;font-size:10px;color:#9ca3af;">2d ago</div></div>
+          <div style="background:#fff;border:1px solid #e4e7ed;border-radius:8px;padding:12px;display:flex;gap:10px;align-items:center;"><span style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;">Rejected</span><div><div style="font-size:12px;font-weight:600;">Maximus</div><div style="font-size:11px;color:#9ca3af;">Project Director</div></div><div style="margin-left:auto;font-size:10px;color:#9ca3af;">3d ago</div></div>
+          <div style="background:#eff4ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 12px;font-size:12px;color:#2563eb;font-weight:600;text-align:center;">Pipeline updated automatically ✓</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature split 3 — Market rate -->
+    <div class="feature-split">
+      <div class="feature-split-content">
+        <div class="feature-split-eyebrow">Market intelligence</div>
+        <h2>Know what you're<br>worth before you apply.</h2>
+        <p class="feature-split-desc">Every job card shows how the posted salary compares to real market rate for that role and city — plus a Glassdoor company scorecard — so you never walk into a bad situation.</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span>Live salary market data for your role and location</li>
+          <li><span class="check">✓</span>Above / At / Below market label on every listing</li>
+          <li><span class="check">✓</span>Glassdoor ratings, CEO approval, work-life balance</li>
+          <li><span class="check">✓</span>Company response rate and ghosting data</li>
+          <li><span class="check">✓</span>Commute time estimate from your zip code</li>
+        </ul>
+      </div>
+      <div class="feature-split-visual" style="padding:20px;">
+        <div style="font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;">Market rate — Construction PM · Nashville</div>
+        <div style="background:#fff;border:1px solid #e4e7ed;border-radius:10px;padding:16px;margin-bottom:10px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span style="font-size:13px;font-weight:700;color:#16a34a;">$95,000 – $130,000</span><span style="background:#f0fdf4;color:#16a34a;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;">Above market</span></div>
+          <div style="height:8px;background:#f3f4f6;border-radius:4px;position:relative;margin-bottom:6px;"><div style="position:absolute;inset:0;background:linear-gradient(90deg,#dbeafe,#2563eb);border-radius:4px;opacity:0.4;"></div><div style="position:absolute;width:12px;height:12px;border-radius:50%;background:#16a34a;border:2px solid #fff;top:-2px;left:62%;box-shadow:0 1px 4px rgba(0,0,0,0.2);"></div></div>
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:#9ca3af;"><span>$72k</span><span style="color:#2563eb;font-weight:600;">Median $108k</span><span>$152k</span></div>
+        </div>
+        <div style="background:#fff;border:1px solid #e4e7ed;border-radius:10px;padding:14px;">
+          <div style="font-size:10px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:10px;">Company scorecard</div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px;">
+            <div style="font-size:24px;font-weight:900;color:#111;letter-spacing:-0.03em;">4.1</div>
+            <div style="flex:1;"><div style="height:5px;background:#f3f4f6;border-radius:3px;margin-bottom:5px;overflow:hidden;"><div style="width:82%;height:100%;background:#16a34a;border-radius:3px;"></div></div><div style="height:5px;background:#f3f4f6;border-radius:3px;margin-bottom:5px;overflow:hidden;"><div style="width:75%;height:100%;background:#16a34a;border-radius:3px;"></div></div><div style="height:5px;background:#f3f4f6;border-radius:3px;overflow:hidden;"><div style="width:70%;height:100%;background:#d97706;border-radius:3px;"></div></div></div>
+            <div style="background:#f0fdf4;color:#16a34a;font-size:16px;font-weight:900;padding:6px 12px;border-radius:8px;">B+</div>
+          </div>
+          <div style="font-size:10px;color:#9ca3af;">Work-life · Compensation · Culture &nbsp;·&nbsp; 2,841 reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VS Comparison -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">vs. the alternatives</div>
+      <h2>Why ApplyHound?</h2>
+      <p class="lead" style="margin-top:16px;">Other tools do pieces of this. None do all of it — at this price.</p>
+    </div>
+    <div style="overflow-x:auto;margin-top:48px;">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="col-us" style="background:var(--accent);color:#fff;">ApplyHound</th>
+            <th>Jobright</th>
+            <th>Teal</th>
+            <th>Huntr</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Auto job fetching (runs daily)</td><td class="col-us"><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Multi-board job fetch</td><td class="col-us"><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Email auto-tracking</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Market rate comparison</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Company scorecards</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Commute estimates</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Full pipeline tracking</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>AI cover letters</td><td class="col-us"><span class="check">✓ Premium</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Price</td><td class="col-us" style="font-weight:800;color:var(--accent);">From $5/mo</td><td>$29/mo</td><td>$29/mo</td><td>$20/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container-sm">
+    <div class="eyebrow eyebrow-dark text-center">Get started</div>
+    <h2 class="text-center" style="margin-bottom:16px;">Ready to find your next role?</h2>
+    <p class="lead lead-dark text-center" style="margin-bottom:40px;">Set up in 2 minutes. Your feed starts fetching immediately.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://applyhound-production.up.railway.app" class="btn btn-white btn-xl">Start for free →</a>
+      <a href="pricing.html" class="btn btn-ghost-dark btn-lg">View pricing</a>
+    </div>
+    <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.35);text-align:center;">No credit card required</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="icon-dark.png" alt="ApplyHound" class="footer-brand-icon" />
+      <p>The smarter job search — for professionals who are serious about their next move.</p>
+    </div>
+    <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="https://applyhound-production.up.railway.app">Sign in</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="mailto:hello@applyhound.com">Contact</a></div>
+    <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ApplyHound. All rights reserved.</span>
+    <span>Fetch better jobs. 🐾</span>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+</body>
+</html>
