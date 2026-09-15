@@ -10,163 +10,143 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Hero overrides */
-    .hero { padding: 120px 24px 80px; text-align: center; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.25); border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 28px; }
-    .hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 24px; max-width: 860px; margin-left: auto; margin-right: auto; }
-    .hero h1 em { font-style: normal; color: var(--accent); }
-    .hero p { font-size: clamp(16px, 2vw, 20px); color: var(--text-muted); line-height: 1.7; max-width: 580px; margin: 0 auto 40px; }
-    .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 64px; }
-    .logos-row { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; opacity: 0.45; margin-bottom: 80px; }
-    .logos-row img { height: 20px; width: auto; filter: grayscale(1); }
-    .logos-label { font-size: 12px; color: var(--text-dim); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 8px; }
-    /* Feature grid */
-    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto 80px; padding: 0 24px; }
-    .feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
-    .feature-icon { font-size: 28px; margin-bottom: 16px; }
-    .feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-    /* How it works */
-    .how { max-width: 860px; margin: 0 auto 80px; padding: 0 24px; }
-    .how h2 { font-size: 32px; font-weight: 900; letter-spacing: -0.03em; text-align: center; margin-bottom: 48px; }
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
-    .step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-    .step h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-    .step p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
-    /* Pricing strip */
-    .pricing-strip { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 64px 24px; margin-bottom: 80px; }
-    .pricing-strip-inner { max-width: 700px; margin: 0 auto; text-align: center; }
-    .pricing-strip h2 { font-size: 32px; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 12px; }
-    .pricing-strip p { font-size: 16px; color: var(--text-muted); margin-bottom: 36px; }
-    .plan-cards { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-    .plan-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; text-align: left; min-width: 240px; }
-    .plan-card.featured { border-color: var(--accent); }
-    .plan-name { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
-    .plan-price { font-size: 36px; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 16px; }
-    .plan-price span { font-size: 14px; font-weight: 400; color: var(--text-muted); }
-    /* CTA section */
-    .cta-section { text-align: center; padding: 80px 24px; }
-    .cta-section h2 { font-size: 36px; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 16px; }
-    .cta-section p { font-size: 18px; color: var(--text-muted); margin-bottom: 36px; }
-  </style>
 </head>
 <body>
-  <!-- Nav -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="stamp-light.png" alt="ApplyHound" /></a>
-      <div class="nav-links">
-        <a href="/features.html">Features</a>
-        <a href="/pricing.html">Pricing</a>
-        <a href="/about.html">About</a>
-      </div>
-      <div class="nav-actions">
-        <a href="https://app.applyhound.com/auth/login" class="btn btn-outline">Sign in</a>
-        <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary">Get started free</a>
-      </div>
+
+<!-- Nav -->
+<nav class="nav light-mode" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="stamp-light.png" alt="ApplyHound" /></a>
+    <div class="nav-links">
+      <a href="/features.html">Features</a>
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html">About</a>
     </div>
-  </nav>
+    <div class="nav-cta">
+      <a href="https://app.applyhound.com/auth/login" class="btn btn-outline">Sign in</a>
+      <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary">Get started free</a>
+    </div>
+  </div>
+</nav>
+
+<div style="padding-top:68px;">
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-badge">🐾 Now live — start your smarter job search</div>
-    <h1>Stop juggling tabs.<br><em>Start landing jobs.</em></h1>
-    <p>ApplyHound fetches jobs from every major board, tracks your applications automatically via email, and shows you exactly where you stand — without the spreadsheet.</p>
-    <div class="hero-cta">
-      <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary btn-lg">Get started — $7/mo</a>
-      <a href="/features.html" class="btn btn-outline btn-lg">See how it works</a>
-    </div>
-    <!-- Job board logos -->
-    <div class="logos-row">
-      <span class="logos-label">Pulls from</span>
-      <img src="LinkedIn.png" alt="LinkedIn" />
-      <img src="Indeed.png" alt="Indeed" />
-      <img src="ZipRecruiter.png" alt="ZipRecruiter" />
-      <img src="Glassdoor.png" alt="Glassdoor" />
-      <img src="Monster.png" alt="Monster" />
-      <img src="Google.png" alt="Google" />
-      <img src="SimplyHired.png" alt="SimplyHired" />
+  <section style="padding:100px 0 80px; background:var(--bg); border-bottom:1px solid var(--border);">
+    <div class="container text-center">
+      <div class="eyebrow">Now live — start your smarter job search</div>
+      <h1 style="font-size:clamp(40px,6vw,72px);font-weight:900;letter-spacing:-0.04em;line-height:1.05;margin-bottom:24px;max-width:860px;margin-left:auto;margin-right:auto;">
+        Stop juggling tabs.<br><span style="color:var(--accent);">Start landing jobs.</span>
+      </h1>
+      <p class="lead">ApplyHound fetches jobs from every major board, tracks your applications automatically via email, and shows you exactly where you stand — without the spreadsheet.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px;margin-bottom:56px;">
+        <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary btn-lg">Get started — $7/mo</a>
+        <a href="/features.html" class="btn btn-outline btn-lg">See how it works</a>
+      </div>
+      <!-- Job board logos -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;opacity:0.45;">
+        <span style="font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-dim);">Pulls from</span>
+        <img src="LinkedIn.png" alt="LinkedIn" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="Indeed.png" alt="Indeed" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="ZipRecruiter.png" alt="ZipRecruiter" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="Glassdoor.png" alt="Glassdoor" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="Monster.png" alt="Monster" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="Google.png" alt="Google" style="height:18px;width:auto;filter:grayscale(1);" />
+        <img src="SimplyHired.png" alt="SimplyHired" style="height:18px;width:auto;filter:grayscale(1);" />
+      </div>
     </div>
   </section>
 
   <!-- Features -->
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">📥</div>
-      <h3>Unified job feed</h3>
-      <p>One click fetches jobs from LinkedIn, Indeed, ZipRecruiter, Glassdoor, and more. No more tab switching or duplicate listings.</p>
+  <section style="padding:80px 0; background:var(--bg-soft);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px;">
+        <div class="eyebrow">Features</div>
+        <h2 style="font-size:36px;font-weight:900;letter-spacing:-0.03em;">Everything your job search needs</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">📥</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Unified job feed</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">One click fetches jobs from LinkedIn, Indeed, ZipRecruiter, Glassdoor, and more. No more tab switching.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">📬</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Email auto-tracking</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Connect Gmail and we automatically scan for interview requests, rejections, and offers — and update your pipeline for you.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">📊</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Application pipeline</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">See every application at a glance — applied, phone screen, interview, offer, rejected. Know exactly where you stand.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">💰</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Compensation data</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">See salary ranges for every listing and market rate data so you always know your worth before negotiations.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">🏢</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">Company scorecards</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Glassdoor ratings, response rates, and ghost scores surface automatically so you can prioritize wisely.</p>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;">
+          <div style="font-size:28px;margin-bottom:16px;">✍️</div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;">AI cover letters</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Build your profile once. Generate tailored cover letters for any job in seconds. Premium feature.</p>
+        </div>
+      </div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📬</div>
-      <h3>Email auto-tracking</h3>
-      <p>Connect Gmail and we automatically scan for interview requests, rejections, and offer letters — and update your pipeline for you.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <h3>Application pipeline</h3>
-      <p>See every application at a glance — applied, phone screen, interview, offer, rejected. Know exactly where you stand at all times.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">💰</div>
-      <h3>Compensation data</h3>
-      <p>See salary ranges for every listing and market rate data so you always know your worth before walking into a negotiation.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🏢</div>
-      <h3>Company scorecards</h3>
-      <p>Glassdoor ratings, response rates, and ghost scores surface automatically so you can prioritize the companies worth your time.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">✍️</div>
-      <h3>AI cover letters</h3>
-      <p>Build your background profile once. Generate tailored cover letters for any job in seconds — Premium feature.</p>
-    </div>
-  </div>
+  </section>
 
   <!-- How it works -->
-  <section class="how">
-    <h2>Up and running in 2 minutes</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h4>Set your preferences</h4>
-        <p>Enter your target job titles, locations, and salary range. Takes 60 seconds.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h4>Fetch your feed</h4>
-        <p>We pull the last 30 days of matching jobs from every major board in one shot.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h4>Connect your email</h4>
-        <p>Link Gmail and we auto-track every application update — no manual logging.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h4>Stay on top of it</h4>
-        <p>New jobs flow in daily. Your pipeline updates automatically. You focus on interviews.</p>
+  <section style="padding:80px 0; background:var(--bg);">
+    <div class="container-sm text-center">
+      <div class="eyebrow">How it works</div>
+      <h2 style="font-size:36px;font-weight:900;letter-spacing:-0.03em;margin-bottom:48px;">Up and running in 2 minutes</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;text-align:left;">
+        <div>
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">1</div>
+          <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;">Set your preferences</h4>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Enter your target job titles, locations, and salary range. Takes 60 seconds.</p>
+        </div>
+        <div>
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">2</div>
+          <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;">Fetch your feed</h4>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">We pull the last 30 days of matching jobs from every major board in one shot.</p>
+        </div>
+        <div>
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">3</div>
+          <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;">Connect your email</h4>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Link Gmail and we auto-track every application update — no manual logging.</p>
+        </div>
+        <div>
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">4</div>
+          <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;">Stay on top of it</h4>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">New jobs flow in daily. Your pipeline updates automatically. Focus on interviews.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing strip -->
-  <section class="pricing-strip">
-    <div class="pricing-strip-inner">
-      <h2>Simple, honest pricing</h2>
-      <p>No free tier with paywalls around everything. Two plans, both useful.</p>
-      <div class="plan-cards">
-        <div class="plan-card">
-          <div class="plan-name">Standard</div>
-          <div class="plan-price">$7<span>/mo</span></div>
-          <p style="font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:20px;">Unified feed, pipeline tracking, email scanning, company scorecards.</p>
+  <section style="padding:80px 0; background:var(--bg-soft); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container-sm text-center">
+      <div class="eyebrow">Pricing</div>
+      <h2 style="font-size:36px;font-weight:900;letter-spacing:-0.03em;margin-bottom:12px;">Simple, honest pricing</h2>
+      <p class="lead" style="margin-bottom:48px;">No free tier with paywalls around everything. Two plans, both useful.</p>
+      <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:32px;min-width:260px;text-align:left;">
+          <div style="font-size:12px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;">Standard</div>
+          <div style="font-size:40px;font-weight:900;letter-spacing:-0.03em;margin-bottom:16px;">$7<span style="font-size:16px;font-weight:400;color:var(--text-muted);">/mo</span></div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:24px;">Unified feed, pipeline tracking, email scanning, company scorecards.</p>
           <a href="https://app.applyhound.com/auth/signup" class="btn btn-outline" style="width:100%;display:block;text-align:center;">Get Standard</a>
         </div>
-        <div class="plan-card featured">
-          <div class="plan-name" style="color:var(--accent);">Premium</div>
-          <div class="plan-price">$9<span>/mo</span></div>
-          <p style="font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:20px;">Everything in Standard plus AI cover letters and full resume builder.</p>
+        <div style="background:var(--bg);border:2px solid var(--accent);border-radius:14px;padding:32px;min-width:260px;text-align:left;position:relative;">
+          <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;white-space:nowrap;">MOST POPULAR</div>
+          <div style="font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;">Premium</div>
+          <div style="font-size:40px;font-weight:900;letter-spacing:-0.03em;margin-bottom:16px;">$9<span style="font-size:16px;font-weight:400;color:var(--text-muted);">/mo</span></div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:24px;">Everything in Standard plus AI cover letters and full resume builder.</p>
           <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary" style="width:100%;display:block;text-align:center;">Get Premium</a>
         </div>
       </div>
@@ -174,25 +154,58 @@
   </section>
 
   <!-- Final CTA -->
-  <section class="cta-section">
-    <h2>Your next job is out there.</h2>
-    <p>Stop losing track of applications. Start ApplyHound today.</p>
-    <a href="https://app.applyhound.com/auth/signup" class="btn btn-primary btn-lg">Get started for $7/mo →</a>
-    <p style="font-size:13px;color:var(--text-dim);margin-top:16px;">Cancel anytime. No contracts.</p>
+  <section style="padding:100px 0; background:var(--dark); text-align:center;">
+    <div class="container-sm">
+      <h2 style="font-size:40px;font-weight:900;letter-spacing:-0.03em;color:#fff;margin-bottom:16px;">Your next job is out there.</h2>
+      <p style="font-size:18px;color:rgba(255,255,255,0.65);margin-bottom:36px;">Stop losing track of applications. Start ApplyHound today.</p>
+      <a href="https://app.applyhound.com/auth/signup" class="btn btn-white btn-xl">Get started for $7/mo →</a>
+      <p style="font-size:13px;color:rgba(255,255,255,0.35);margin-top:16px;">Cancel anytime. No contracts.</p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="footer-inner">
-      <img src="stamp-light.png" alt="ApplyHound" style="height:32px;opacity:0.6;" />
-      <div class="footer-links">
+      <div class="footer-brand">
+        <img src="icon-dark.png" alt="ApplyHound" class="footer-brand-icon" />
+        <p>The smarter job search — for professionals who are serious about their next move.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
         <a href="/features.html">Features</a>
         <a href="/pricing.html">Pricing</a>
-        <a href="/about.html">About</a>
         <a href="https://app.applyhound.com/auth/login">Sign in</a>
       </div>
-      <div style="font-size:12px;color:var(--text-dim);">© 2026 ApplyHound · Fetch better jobs. 🐾</div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="mailto:hello@applyhound.com">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="https://app.applyhound.com/privacy">Privacy Policy</a>
+        <a href="https://app.applyhound.com/terms">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ApplyHound. All rights reserved.</span>
+      <span>Fetch better jobs. 🐾</span>
     </div>
   </footer>
+
+</div>
+
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
