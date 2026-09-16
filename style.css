@@ -428,13 +428,21 @@ footer { background: var(--dark); color: #fff; padding: 64px 32px 32px; }
   flex-direction: column;
   gap: 4px;
   padding: 12px 16px 20px;
-  border-top: 1px solid rgba(255,255,255,0.1);
   background: rgba(10,13,20,0.97);
   backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  /* Full width, positioned below the nav bar */
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
 }
 .nav.light-mode .mobile-menu {
   background: rgba(255,255,255,0.98);
   border-top: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
 }
 .mobile-menu a {
   display: block;
@@ -489,11 +497,10 @@ footer { background: var(--dark); color: #fff; padding: 64px 32px 32px; }
 @media (max-width: 640px) {
   /* Nav */
   .nav { padding: 0 16px; height: 60px; }
-  .nav-links { display: none; }
   .nav-logo img { height: 40px; }
-  /* Hide "Sign in" on mobile, keep only CTA */
-  .nav-cta .btn-ghost-dark { display: none; }
-  .nav-cta .btn { padding: 8px 16px; font-size: 13px; }
+  /* Hide desktop nav links and CTA on mobile */
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
 
   /* Hero */
   .hero-inner { padding: 48px 20px 40px; }
