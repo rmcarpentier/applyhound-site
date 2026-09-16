@@ -253,7 +253,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Logo scroll ── */
 .logo-scroll-section {
-  padding: 28px 0;
+  padding: 36px 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: #fff; overflow: hidden;
@@ -261,11 +261,11 @@ img { max-width: 100%; display: block; }
 .logo-scroll-label {
   text-align: center; font-size: 12px; font-weight: 600;
   color: var(--text-dim); letter-spacing: 0.06em;
-  text-transform: uppercase; margin-bottom: 20px;
+  text-transform: uppercase; margin-bottom: 24px;
 }
 .logo-track-wrapper { overflow: hidden; width: 100%; }
 .logo-track {
-  display: flex; gap: 56px; align-items: center;
+  display: flex; gap: 72px; align-items: center;
   animation: scroll-logos 35s linear infinite;
   width: max-content;
   padding-left: 0;
