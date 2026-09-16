@@ -25,6 +25,17 @@
       <a href="https://app.applyhound.com" class="btn btn-outline">Sign in</a>
       <a href="https://app.applyhound.com" class="btn btn-primary">Get started free</a>
     </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/features">Features</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/about">About</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="https://app.applyhound.com" class="mobile-menu-signin">Sign in</a>
+    <a href="https://app.applyhound.com" class="btn btn-primary" style="text-align:center;">Get started free →</a>
   </div>
 </nav>
 
@@ -169,6 +180,23 @@
 
 <script>
 function toggleFaq(btn) { btn.parentElement.classList.toggle('open'); }
+
+const nav = document.getElementById('nav');
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+hamburger.addEventListener('click', () => {
+  const open = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
 </script>
 </body>
 </html>
