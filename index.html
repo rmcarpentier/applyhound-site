@@ -52,7 +52,7 @@
     <img src="icon-dark.png" alt="" style="height:80px;width:auto;margin-bottom:16px;" />
     <div class="hero-badge">🐾 &nbsp;Fetch better jobs — now live</div>
     <h1>Stop juggling tabs.<br><span class="accent">Start landing jobs.</span></h1>
-    <p class="hero-sub">ApplyHound pulls from every major job board, tracks your applications automatically via email, and shows you exactly where you stand — without the spreadsheet.</p>
+    <p class="hero-sub">ApplyHound pulls from every major job board, surfaces job leads from your email alerts, tracks your applications automatically, and shows you exactly where you stand — without the spreadsheet.</p>
     <div class="hero-actions">
       <a href="https://app.applyhound.com" class="btn btn-primary btn-xl">Get started</a>
       <a href="features.html" class="btn btn-ghost-dark btn-lg">See how it works</a>
@@ -319,7 +319,7 @@
       <div class="step-card">
         <div class="step-num">3</div>
         <div class="step-title">Connect Gmail</div>
-        <div class="step-desc">We scan for confirmations, rejections, and interview requests automatically. Read-only.</div>
+        <div class="step-desc">We scan for job alert emails and surface new leads automatically, plus track confirmations, rejections, and interview requests. Read-only.</div>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
@@ -387,6 +387,7 @@
           <li><span class="check">✓</span>Read-only — we never send, modify, or delete emails</li>
           <li><span class="check">✓</span>Every auto-update logged in your application timeline</li>
           <li><span class="check">✓</span>Surfaces new applications found in your inbox</li>
+          <li><span class="check">✓</span>Parses job alert emails from LinkedIn, Indeed, ZipRecruiter & more into a Suggested jobs tab</li>
           <li><span class="check">✓</span>Manual override always available</li>
         </ul>
       </div>
@@ -415,6 +416,31 @@
       </div>
     </div>
 
+    <!-- Feature split — Suggested jobs -->
+    <div class="feature-split">
+    <div class="feature-split-content">
+    <div class="feature-split-eyebrow">Suggested jobs</div>
+    <h2>Job alerts, organized<br>and ready to act on.</h2>
+    <p class="feature-split-desc">ApplyHound reads your job alert emails from LinkedIn, Indeed, ZipRecruiter, Ladders, and more — and turns each listing into a job card with a title, company, salary, and apply link. No more hunting through your inbox.</p>
+    <ul class="feature-list">
+    <li><span class="check">✓</span>Pulls individual job listings out of every alert email automatically</li>
+    <li><span class="check">✓</span>Each suggested job has a direct apply link, company, location, and salary when posted</li>
+    <li><span class="check">✓</span>One-click to move a suggested job into your main feed or apply directly</li>
+    <li><span class="check">✓</span>Add your own job alert senders — any industry-specific job board that emails you</li>
+    <li><span class="check">✓</span>Bulk select and dismiss jobs that aren't a fit — clear your queue in seconds</li>
+    </ul>
+    </div>
+    <div class="feature-split-visual" style="padding:20px;">
+    <div style="font-size:11px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;">Suggested · 3 jobs from your email alerts</div>
+    <div style="display:flex;flex-direction:column;gap:1px;">
+    <div style="background:#fff;border:1px solid #f3f4f6;padding:12px;display:flex;gap:10px;border-radius:8px 8px 0 0;"><div style="width:28px;height:28px;border-radius:50%;background:#dbeafe;color:#2563eb;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">T</div><div><div style="font-size:12px;font-weight:700;color:#111;">Construction Superintendent</div><div style="font-size:11px;color:#6b7280;">Thomas Constructors, LLC · Franklin, TN · via ZipRecruiter</div><div style="margin-top:4px;"><span style="background:#f0fdf4;color:#16a34a;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;">$75K–$110K/yr</span><span style="background:#e0f2fe;color:#0369a1;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;margin-left:4px;">Suggested</span></div></div></div>
+    <div style="background:#fff;border:1px solid #f3f4f6;padding:12px;display:flex;gap:10px;"><div style="width:28px;height:28px;border-radius:50%;background:#fff7ed;color:#d97706;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">C</div><div><div style="font-size:12px;font-weight:700;color:#111;">Commercial Construction Project Manager</div><div style="font-size:11px;color:#6b7280;">Confidential · Nashville, TN · via Indeed</div><div style="margin-top:4px;"><span style="background:#f0fdf4;color:#16a34a;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;">$120K–$150K/yr</span></div></div></div>
+    <div style="background:#fff;border:1px solid #f3f4f6;padding:12px;display:flex;gap:10px;border-radius:0 0 8px 8px;"><div style="width:28px;height:28px;border-radius:50%;background:#faf5ff;color:#7c3aed;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;">M</div><div><div style="font-size:12px;font-weight:700;color:#111;">Lead Multifamily Superintendent</div><div style="font-size:11px;color:#6b7280;">Michael Page · Nashville, TN · via Michael Page</div><div style="margin-top:4px;"><span style="background:#f0fdf4;color:#16a34a;font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;">$130K–$150K/yr</span></div></div></div>
+    </div>
+    <div style="background:#eff4ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 12px;font-size:12px;color:#2563eb;font-weight:600;text-align:center;margin-top:10px;">3 selected · Move to Feed · Dismiss selected</div>
+    </div>
+    </div>
+    
     <!-- Feature split 3 — Market rate -->
     <div class="feature-split">
       <div class="feature-split-content">
@@ -484,6 +510,7 @@
         <tbody>
           <tr><td>Multi-board job pull</td><td class="col-us"><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
           <tr><td>Email auto-tracking</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
+          <tr><td>Job alert email parsing</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
           <tr><td>Market rate comparison</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
           <tr><td>Company scorecards</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
           <tr><td>Commute estimates</td><td class="col-us"><span class="check">✓</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td><td><span class="cross">—</span></td></tr>
